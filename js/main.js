@@ -37,6 +37,9 @@ jQuery(document).ready(function($){
 
 		$(`.order-btn${n}`).click(function(){
 
+			let price = $(this).data("price")
+			$("#price-holder").text(price)
+
 			let smallImageLink = $(`#small-image${n}`).attr("src")
 			$("#large-image").attr("src", smallImageLink)
 	
@@ -57,6 +60,10 @@ jQuery(document).ready(function($){
 	for(let i = 1; i < 4; i++){
 		imageChanger(i);
 	}
+
+
+
+
 
 
 });
