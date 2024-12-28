@@ -263,6 +263,7 @@ header .top-header .signup-block a{
 
 .content-section .main-content .text-block .add-order-block .card{
 	width: calc(100% - 15px);
+	/* width: 100%; */
 
 	border-radius: 25px;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -319,12 +320,16 @@ header .top-header .signup-block a{
 	cursor: pointer;
 }
 
-.content-section .main-content .text-block .add-order-block .card a{
+.content-section .main-content .text-block .add-order-block .card .button{
 	color: #fff;
 	text-transform: capitalize;
 	background-color: #af1010;
 	padding: 8px 35px;
 	border-radius: 50px;
+	outline: none;
+	border: none;
+
+
 }
 
 /*............main content [PHOTO BLOCK] css...........*/

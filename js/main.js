@@ -20,18 +20,51 @@ lists.forEach(function(item){
 
 })
 
+
+
+$('.add-order-block').slick({
+	infinite: true,
+	slidesToShow: 2,
+	// slidesToScroll: 1,
+	draggable:true,
+  });
+
 // ________________________________________________
 
-$(document).ready(function(){
+jQuery(document).ready(function($){
+// its works ---
+	function imageChanger(n){
+
+		$(`.order-btn${n}`).click(function(){
+
+			let smallImageLink = $(`#small-image${n}`).attr("src")
+			$("#large-image").attr("src", smallImageLink)
+	
+		});
+
+	}
+	// imageChanger(1);
+	// imageChanger(2);
+	// imageChanger(3);
+
+// its works ---
+	// let i = 1;
+	// while(i <= 3){
+	// 	imageChanger(i);
+	// 	i++
+	// }
+
+	for(let i = 1; i < 4; i++){
+		imageChanger(i);
+	}
 
 
+});
+	// let card = $(".card");
 
+	// let cardimage = $(".card-image > img");
 
-	let card = $(".card");
-
-	let cardimage = $(".card-image > img");
-
-	let bigphoto = $(".big-img > img");
+	// let bigphoto = $(".big-img > img");
 
 
 
@@ -78,15 +111,15 @@ $(document).ready(function(){
 
 
 
-let price = $(".card .detail p span");
-let priceshowblock = $(".photo-block .price-block .price-and-badge p");
+// let price = $(".card .detail p span");
+// let priceshowblock = $(".photo-block .price-block .price-and-badge p");
 
-// normal work --
-$(price).click(function(){
-	let clickedprice = $(this).text()
-	$(priceshowblock).text(clickedprice)
+// // normal work --
+// $(price).click(function(){
+// 	let clickedprice = $(this).text()
+// 	$(priceshowblock).text(clickedprice)
 
-});
+// });
 
 
 // $(card).click(function(){
@@ -121,18 +154,18 @@ $(price).click(function(){
 
 // its work ---
 
-let tr = $(".imgg").hover();
+// let tr = $(".imgg").hover();
 
-$( ".imggg" ).hover( function(){
+// $( ".imggg" ).hover( function(){
 
-		if(tr = true){
-			$(bigphoto).attr("src", this.src);
-		}
-		else{
-			$(bigphoto).attr("src", "./images/roasted-chicken.png");
-		}
+// 		if(tr = true){
+// 			$(bigphoto).attr("src", this.src);
+// 		}
+// 		else{
+// 			$(bigphoto).attr("src", "./images/roasted-chicken.png");
+// 		}
 
-	} );
+// 	} );
 
 	
 	
@@ -140,19 +173,19 @@ $( ".imggg" ).hover( function(){
 // its work ---
 
 // conform oredr div store
-let conformorder = $(".content-section .main-content .photo-block .big-img .conform-order");
+// let conformorder = $(".content-section .main-content .photo-block .big-img .conform-order");
 
-// order btn a store
-let order_btn = $(".order-btn");
+// // order btn a store
+// let order_btn = $(".order-btn");
 
 
-	$(order_btn).click( function(){
+// 	$(order_btn).click( function(){
 
-		$( conformorder ).fadeIn(900).delay(2000).fadeOut(900);
+// 		$( conformorder ).fadeIn(900).delay(2000).fadeOut(900);
 
-	} );
+// 	} );
 
-})
+
 
 
 
