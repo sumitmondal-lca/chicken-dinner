@@ -1,0 +1,448 @@
+:root{
+	--16-clamp-fz: 16px;
+	--60-clamp-fz: 60px;
+}
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: "Poppins", serif;
+	font-size: 16px;
+	color: #000;
+	line-height: 1.3;
+	font-weight: normal;
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+/*	overflow: hidden;	*/
+
+	background-image: url("../images/chevron.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 820px 70%;
+
+}
+img{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+ul,
+li{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/* __________ chicken dinner post [HEADER] css start ____________ */
+
+header{
+	padding: 12px 0 0 0;
+	margin: 0;
+}
+
+.container{
+	width: min(1440px, 100%);
+	margin-inline: auto;
+	padding-inline: auto;
+}
+
+header .top-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .top-header .logo-block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header .top-header .logo-block .logo-icon{
+	fill: #9B0B0B;
+}
+
+header .top-header .logo-block h2{
+	font-weight: 600;
+	line-height: 1;
+}
+
+header .top-header .logo-block h2 > span{
+	color: #af1010;
+	font-size: 30px;
+}
+
+header .top-header nav ul{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+
+}
+
+
+
+
+header .top-header nav ul li a{
+	font-family: inherit;
+	font-size: var(--16-clamp-fz);
+	color: #000;
+	line-height: 1.3;
+	font-weight: 500;
+	text-transform: capitalize;
+	transition: 0.4s;
+
+	position: relative;
+	padding: 0 40px;
+}
+
+header .top-header nav ul li a::after{
+	content: "";
+	width: 0;
+	height: 2px;
+	background-color: #eb1810;
+	border-radius: 50px;
+
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	right: 50%;
+	transform: translateX(-50%);
+	transition: 0.3s;
+}
+
+header .top-header nav ul li a:hover{
+	color: #e11616;
+}
+
+header .top-header nav ul li a:hover::after{
+	width: 100%;
+}
+
+header .top-header nav ul li.active a,
+header .top-header nav ul li.active a::after{
+	color:  #eb1810;
+	width: 100%;
+}
+
+/*header .top-header nav ul li.active a::after{
+	width: 100%;
+}
+*/
+
+
+
+header .top-header .signup-block{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 25px;
+}
+
+header .top-header .signup-block a{
+	color: #fff;
+	background-color: #9B0B0B;
+	padding: 10px 25px;
+	border-radius: 50px;
+	letter-spacing: 1px;
+}
+
+/* _________ chicken dinner post [HEADER] css end _________ */
+
+
+
+
+/* _________ chicken dinner post [CONTENT SECTION] css start _________ */
+	
+.content-section{
+	padding: 50px 0 0 0;
+	margin: 0;
+}
+
+.content-section .main-content{
+	display: flex;
+	align-items: stretch;
+}
+
+/*............main content [TEXT BLOCK] css...........*/
+.content-section .main-content .text-block{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-between;
+	gap: 100px;
+}
+
+	/*........text block [TEXT CONTENT] css......*/
+.content-section .main-content .text-block .text-content{
+	margin: 0 0 50px 0;
+}
+
+.content-section .main-content .text-block .text-content h1{
+	font-size: clamp(0.75rem, -0.1941rem + 3.3566vw, 3.75rem);
+	font-family: inherit;
+	text-transform: capitalize;
+	font-weight: 600;
+	line-height: 1.1;
+	margin: 0 0 35px 0;
+}
+
+.content-section .main-content .text-block .text-content h1 > span{
+	color: #af1010;
+}
+
+.content-section .main-content .text-block .text-content p{
+	font-size: var(--16-clamp-fz);
+	font-weight: normal;
+	color: #565656;
+	margin: 0 0 35px 0;
+}
+
+.content-section .main-content .text-block .text-content a{
+	color: #fff;
+	text-transform: capitalize;
+	background-color: #9B0B0B;
+	padding: 10px 25px;
+	border-radius: 50px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+	margin: 0 30px 0 0;
+	border: 1px solid transparent;
+	transition: 0.6s;
+}
+.content-section .main-content .text-block .text-content a:nth-of-type(2){
+	color: #000;
+	text-transform: capitalize;
+	padding: 10px 25px;
+	border-radius: 50px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+	margin: 0 30px 0 0;
+	border: 1px solid #9B0B0B;
+	transition: 0.6s;
+	background-color: #fff;
+}
+
+.content-section .main-content .text-block .text-content a:hover{
+	color: #000;
+	border: 1px solid #9B0B0B;
+	background-color: transparent;
+}
+.content-section .main-content .text-block .text-content a:nth-of-type(2):hover{
+	color: #fff;
+	border: 1px solid transparent;
+	background-color: #9B0B0B;
+}
+
+	/*..........text block [ADD ORDER BLOCK] css..........*/
+.content-section .main-content .text-block .add-order-block{
+	/*display: grid;
+	grid-template-columns: repeat(2, 1fr);*/
+
+	display: flex;
+	align-items: center;
+
+	gap: 30px;
+}
+
+.content-section .main-content .text-block .add-order-block .card{
+	width: calc(100% - 15px);
+
+	border-radius: 25px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding: 65px 25px 25px 25px;
+	text-align: center;
+
+	position: relative;
+}
+
+.content-section .main-content .text-block .add-order-block .card .card-img{
+	width: 70%;
+
+	position: absolute;
+	top: -40%;
+	left: 50%;
+	transform: translatex(-50%);
+}
+
+.content-section .main-content .text-block .add-order-block .card .card-img img{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+
+	filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
+}
+
+.content-section .main-content .text-block .add-order-block .card h2{
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 20px;
+	margin: 20px 0 20px 0;
+}
+
+.content-section .main-content .text-block .add-order-block .card p{
+	font-size: 16px;
+	text-align: center;
+	margin: 0 0 20px 0;
+	text-transform: capitalize;
+}
+
+.content-section .main-content .text-block .add-order-block .card .detail{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.content-section .main-content .text-block .add-order-block .card .detail p{
+	font-size: 14px;
+	font-family: inherit;
+	font-weight: 600;
+	color: #141414;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.content-section .main-content .text-block .add-order-block .card a{
+	color: #fff;
+	text-transform: capitalize;
+	background-color: #af1010;
+	padding: 8px 35px;
+	border-radius: 50px;
+}
+
+/*............main content [PHOTO BLOCK] css...........*/
+.content-section .main-content .photo-block{
+	width: 60%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	position: relative;
+}
+
+.content-section .main-content .photo-block .big-img{
+	width: 70%;
+
+	position: relative;
+}
+
+.content-section .main-content .photo-block .big-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
+
+/*	scale: 1.2;*/
+
+	animation: anim 120s ease infinite;
+}
+
+.content-section .main-content .photo-block .conform-order{
+	background-color: #fff;
+	box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+	padding: 4px 7px;
+	border-radius: 10px;
+
+	position: absolute;
+	left: 50%;
+	bottom: -80px;
+	transform: translateX(-50%);
+
+	display: none;
+}
+
+.content-section .main-content .photo-block .conform-order p{
+	font-size: 14px;
+	text-transform: capitalize;
+	font-weight: 550;
+
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.content-section .main-content .photo-block .conform-order p span.span-color{
+	color: #ab0202;
+}
+
+.content-section .main-content .photo-block .conform-order i{
+	font-size: 30px;
+	color: #57af16;
+}
+
+.content-section .main-content .photo-block .price-block{
+	background-color: #fff;
+	padding: 12px 9px 7px;
+	border-radius: 14px;
+	box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+
+	position: absolute;
+	top: 14%;
+    left: 30%;
+}
+
+.content-section .main-content .photo-block .price-block .price-and-badge{
+	display: flex;
+
+	margin: 0 0 4px 0;
+
+}
+
+.content-section .main-content .photo-block .price-block .price-and-badge p{
+	font-size: 20px;
+	font-weight: 700;
+	color: #272727;
+}
+
+.content-section .main-content .photo-block .price-block .price-and-badge img{
+	position: absolute;
+	top: 6px;
+	right: 12px;
+	scale: 1.3;
+}
+
+.content-section .main-content .photo-block .price-block p{
+	font-size: 13px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.content-section .main-content .photo-block .price-block p span{
+	color: #ab0202;
+	font-weight: 600;
+}
+
+
+/* _________ chicken dinner post [CONTENT SECTION] css end _________ */
+
+
+
+
+
+
+
+
+/* key frame animation */
+@keyframes anim{
+	100%{
+		rotate: 720deg;
+	}
+}
