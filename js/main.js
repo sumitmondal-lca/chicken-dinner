@@ -22,12 +22,36 @@ lists.forEach(function(item){
 
 
 
+// $('.add-order-block').slick({
+// 	infinite: true,
+// 	slidesToShow: 1,
+// 	// slidesToScroll: 1,
+// 	draggable:true,
+//   });
+
+
+
+  
 $('.add-order-block').slick({
+	dots: false,
 	infinite: true,
+	speed: 300,
 	slidesToShow: 2,
-	// slidesToScroll: 1,
-	draggable:true,
-  });
+	slidesToScroll: 2,
+	arrows: false,
+	responsive: [
+
+		{
+			brakpoint: 1920,
+			settings:{
+				slidesToShow:1
+			}
+		}
+
+	]
+
+
+});
 
 // ________________________________________________
 
