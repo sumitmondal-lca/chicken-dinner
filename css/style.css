@@ -22,7 +22,6 @@ body{
 	padding: 0;
 	margin: 0;
 	height: 100vh;
-/*	overflow: hidden;	*/
 
 	background-image: url("../images/chevron.svg");
 	background-repeat: no-repeat;
@@ -142,10 +141,10 @@ header .top-header nav ul li.active a::after{
 	width: 100%;
 }
 
-/*header .top-header nav ul li.active a::after{
+/* header .top-header nav ul li.active a::after{
 	width: 100%;
-}
-*/
+} */
+
 
 
 
@@ -172,28 +171,25 @@ header .top-header .signup-block a{
 /* _________ chicken dinner post [CONTENT SECTION] css start _________ */
 	
 .content-section{
-	padding: 50px 0 0 0;
-	margin: 0;
+	margin: 45px 0 0 0;
 }
 
 .content-section .main-content{
 	display: flex;
-	align-items: stretch;
+	align-items: center;
 }
 
 /*............main content [TEXT BLOCK] css...........*/
 .content-section .main-content .text-block{
 	width: 50%;
-	/* display: flex;
-	flex-direction: column; */
-	/* justify-content: space-between;  */
-	/* align-content: space-between; */
-	/* gap: 100px; */
+	display: flex;
+	flex-direction: column;
+	/* gap: 25px; */
 }
 
 	/*........text block [TEXT CONTENT] css......*/
 .content-section .main-content .text-block .text-content{
-	margin: 0 0 25px 0;
+	max-width: 90%;
 }
 
 .content-section .main-content .text-block .text-content h1{
@@ -257,42 +253,50 @@ header .top-header .signup-block a{
 
 	display: flex;
 	align-items: center;
-
-	gap: 30px;
+	gap: 20px;
+	/* overflow: hidden; */
+	/* margin: 25px 0 0 0; */
 }
 
-.content-section .main-content .text-block .add-order-block .slick-list .slick-track{
+
+.slick-slider .slick-track, .slick-slider .slick-list{
+	padding: 70px 0 20px 0;
+	width: 600px;
+}
+.slick-slide{
+	padding: 0 25px;
+}
+
+/* .content-section .main-content .text-block .add-order-block .slick-list .slick-track{
 	padding: 170px 0 0 0;
-}
-.add-order-block.slick-initialized.slick-slider {
+} */
+/* .add-order-block.slick-initialized.slick-slider {
 	max-width: 600px;
-}
+} */
 
 .content-section .main-content .text-block .add-order-block .card{
-	width: calc(100% - 15px);
-	/* width: 100%; */
-
 	border-radius: 25px;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-	padding: 65px 15px 15px 15px;
-	text-align: center;
+	padding: 40px 15px 15px;
 
+	/* width: calc(100% - 10px); */
+	width: max(250px);
 	position: relative;
 }
 
 .content-section .main-content .text-block .add-order-block .card .card-img{
-	width: 60%;
+	width: 65%;
 
 	position: absolute;
 	/* top: -40%; */
-	top: -45%;
+	top: -110px;
 	left: 50%;
 	transform: translatex(-50%);
 }
 
 .content-section .main-content .text-block .add-order-block .card .card-img img{
 	width: 100%;
-	height: auto;
+	height: 100%;
 	object-fit: cover;
 	object-position: center;
 
@@ -306,7 +310,7 @@ header .top-header .signup-block a{
 	margin: 20px 0 20px 0;
 }
 
-.content-section .main-content .text-block .add-order-block .card p{
+.content-section .main-content .text-block .add-order-block .card > p{
 	font-size: 16px;
 	text-align: center;
 	margin: 0 0 20px 0;
@@ -326,19 +330,26 @@ header .top-header .signup-block a{
 	color: #141414;
 	text-transform: capitalize;
 	cursor: pointer;
+	margin: 0 0 0 10px;
 }
 
 .content-section .main-content .text-block .add-order-block .card .button{
 	color: #fff;
 	text-transform: capitalize;
 	background-color: #af1010;
-	padding: 8px 35px;
+	padding: 8px;
+	margin: 0 10px 0 0;
 	border-radius: 50px;
 	outline: none;
 	border: none;
-
-
+	display: flex;
 }
+
+.content-section .main-content .text-block .add-order-block .card .button i{
+	font-size: 22px;
+}
+
+
 
 /*............main content [PHOTO BLOCK] css...........*/
 .content-section .main-content .photo-block{
@@ -351,19 +362,18 @@ header .top-header .signup-block a{
 }
 
 .content-section .main-content .photo-block .big-img{
-	width: 70%;
+	width: 75%;
 
 	position: relative;
 }
 
-.content-section .main-content .photo-block .big-img img{
+.content-section .main-content .photo-block .big-img #large-image{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
-	filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
-
-/*	scale: 1.2;*/
+	filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 5px 15px);
+	/* scale: 1.2; */
 
 	animation: anim 120s ease infinite;
 }
@@ -384,16 +394,13 @@ header .top-header .signup-block a{
 
 .content-section .main-content .photo-block .conform-order p{
 	font-size: 14px;
-	text-transform: capitalize;
 	font-weight: 550;
+	color: #1f1f1f;
+	text-transform: capitalize;
 
 	display: flex;
 	align-items: center;
 	gap: 10px;
-}
-
-.content-section .main-content .photo-block .conform-order p span.span-color{
-	color: #ab0202;
 }
 
 .content-section .main-content .photo-block .conform-order i{
@@ -408,15 +415,14 @@ header .top-header .signup-block a{
 	box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
 
 	position: absolute;
-	top: 14%;
-    left: 30%;
+	top: 0;
+    left: 25%;
 }
 
 .content-section .main-content .photo-block .price-block .price-and-badge{
 	display: flex;
 
 	margin: 0 0 4px 0;
-
 }
 
 .content-section .main-content .photo-block .price-block .price-and-badge p{
@@ -436,13 +442,13 @@ header .top-header .signup-block a{
 	font-size: 13px;
 	font-weight: 500;
 	text-transform: capitalize;
+	color: #1d1d1d;
 }
 
-.content-section .main-content .photo-block .price-block p span{
+.content-section .main-content .photo-block .price-block > p > span{
 	color: #ab0202;
 	font-weight: 600;
 }
-
 
 /* _________ chicken dinner post [CONTENT SECTION] css end _________ */
 
