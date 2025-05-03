@@ -378,10 +378,10 @@ header .top-header .signup-block a{
 	animation: anim 120s ease infinite;
 }
 
-.content-section .main-content .photo-block .conform-order{
+.content-section .main-content .photo-block .confirm-order{
 	background-color: #fff;
 	box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
-	padding: 4px 7px;
+	padding: 4px 10px;
 	border-radius: 10px;
 
 	position: absolute;
@@ -392,7 +392,7 @@ header .top-header .signup-block a{
 	display: none;
 }
 
-.content-section .main-content .photo-block .conform-order p{
+.content-section .main-content .photo-block .confirm-order p{
 	font-size: 14px;
 	font-weight: 550;
 	color: #1f1f1f;
@@ -403,7 +403,7 @@ header .top-header .signup-block a{
 	gap: 10px;
 }
 
-.content-section .main-content .photo-block .conform-order i{
+.content-section .main-content .photo-block .confirm-order i{
 	font-size: 30px;
 	color: #57af16;
 }
