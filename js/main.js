@@ -96,14 +96,14 @@ jQuery(document).ready(function($){
 
 // its work ---
 
-let conformorder = $(".content-section .main-content .photo-block .big-img .conform-order");
+let confirmorder = $(".content-section .main-content .photo-block .big-img .confirm-order");
 
 let order_btn = $(".button");
 
 
 	$(order_btn).click( function(){
 
-		$( conformorder ).fadeIn(900).delay(2000).fadeOut(900);
+		$( confirmorder ).fadeIn(900).delay(2000).fadeOut(900);
 
 	} );
 
